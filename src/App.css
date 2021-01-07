@@ -10,7 +10,7 @@
 .Container{
   display: flex;
   height: 80vh; 
-  padding: 2px;
+  padding: 20px;
   border: 1px solid grey;
   flex-direction: column;
   align-items: center;
@@ -20,9 +20,22 @@
 .todoForm{
   display:flex;
   justify-content: space-around;
-  width: 95%;
-  padding: 0 4rem;
+  width: 100%;
+  padding-bottom: 2%;
+  margin: 0 30px;
+  padding: 0.5rem 3rem;
+  /* width: 30vw; */
+  
 }
+
+@media (max-width: 767px){
+.todoForm, .singleTodo , .Container {
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    margin: 0 50px;
+    padding: 0.5rem 0rem
+}}
 
 input{
   width: 80%;
@@ -42,6 +55,12 @@ button{
   list-style:none;
   margin: 0;
   padding: 0;
+ 
+  /* display: flex; */
+  /* width: 60%; */
+  /* flex-direction: column; */
+  /* padding-inline-start: 0px;
+  margin-block-start: 0em */
 }
 
 
@@ -52,7 +71,7 @@ button{
   color: black;
   padding : 10px 20px;
   display: flex;
-  width: 450px;
+  width: 250px;
   align-items: center;
 }
 
