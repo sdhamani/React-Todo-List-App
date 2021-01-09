@@ -8,6 +8,7 @@
 }
 
 .Container{
+  max-width: widh;
   display: flex;
   height: 80vh; 
   padding: 20px;
@@ -29,12 +30,12 @@
 }
 
 @media (max-width: 767px){
-.todoForm, .singleTodo , .Container {
+.todoForm, .singleTodo , .Container , .allToDo {
     width: -webkit-max-content;
     width: -moz-max-content;
     width: max-content;
-    /* margin: 0 50px;
-    padding: 0.5rem 0rem */
+    margin: 0 50px;
+    padding: 0.5rem 0rem
 }}
 
 input{
